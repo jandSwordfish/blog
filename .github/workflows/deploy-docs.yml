@@ -30,8 +30,8 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-          cache-dependency-path: 'D:\projects\my-docs\pnpm-lock.yaml'
-          
+          cache-dependency-path: 'pnpm-lock.yaml'
+
       - name: 安装依赖
         run: |
           corepack enable
