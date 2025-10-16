@@ -3,9 +3,9 @@ home: true
 layout: Blog
 icon: house
 title: swordfish的博客
-bgImage: .vuepress/public/assets/images/paper.png
+bgImage: /assets/images/paper.png
 bgImageDark: .vuepress/public/dark.png
-heroImage: .vuepress/public/assets/images/cp.png
+heroImage: .vuepress/public/assets/imaes/cp.png
 heroText: swordfish的博客
 heroFullScreen: true
 tagline: ——若想看见光 就得站在光的背面
