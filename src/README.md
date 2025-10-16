@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: house
 title: swordfish的博客
-bgImage: .vuepress/public/paper.png
+bgImage: .vuepress/public/assets/images/paper.png
 bgImageDark: .vuepress/public/dark.png
 heroImage: .vuepress/public/cp.png
 heroText: swordfish的博客
