@@ -1,17 +1,17 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { zhNavbar } from "./navbar/index.js";
+import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
+    name: "Swordfish",
     url: "https://mister-hope.com",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: ".vuepress/public/cp.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -19,70 +19,49 @@ export default hopeTheme({
 
   blog: {
     medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
+      //Baidu: "https://baidu.com",
+      BiliBili: "https://space.bilibili.com/355151699",
+      //Bitbucket: "https://example.com",
+      //Dingding: "https://example.com",
+      //Discord: "https://example.com",
+      //Dribbble: "https://example.com",
+      //Email: "mailto:info@example.com",
+      //Evernote: "https://example.com",
+      //Facebook: "https://example.com",
+      //Flipboard: "https://example.com",
+      //Gitee: "https://example.com",
       GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
-      Instagram: "https://example.com",
-      Lark: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
-      QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
+      //Gitlab: "https://example.com",
+      //Gmail: "mailto:info@example.com",
+      //Instagram: "https://example.com",
+      //Lark: "https://example.com",
+      //Lines: "https://example.com",
+      //Linkedin: "https://example.com",
+      //Pinterest: "https://example.com",
+      //Pocket: "https://example.com",
+      QQ: "https://qm.qq.com/q/1lqUrATNkY",
+      //Qzone: "https://example.com",
+      //Reddit: "https://example.com",
+      //Rss: "https://example.com",
+      //Steam: "https://example.com",
+      //Twitter: "https://example.com",
+      //Wechat: "https://example.com",
+      //Weibo: "https://example.com",
+      //Whatsapp: "https://example.com",
+      //Youtube: "https://example.com",
+      //Zhihu: "https://example.com",
+      // VuePressThemeHope: {
+      //   icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+      //   link: "https://theme-hope.vuejs.press",
+      // },
     },
   },
 
   locales: {
-    "/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      blog: {
-        description: "A FrontEnd programmer",
-        intro: "/intro.html",
-      },
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-
     /**
      * Chinese locale config
      */
-    "/zh/": {
+    "/": {
       // navbar
       navbar: zhNavbar,
 
@@ -95,7 +74,7 @@ export default hopeTheme({
 
       blog: {
         description: "一个前端开发者",
-        intro: "/zh/intro.html",
+        intro: "/intro.html",
       },
 
       // page meta
@@ -108,10 +87,6 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-      "/zh/demo/encrypt.html": {
         hint: "Password: 1234",
         password: "1234",
       },
@@ -267,4 +242,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+},{custom: true});
