@@ -1,9 +1,11 @@
 ---
 icon: "person-chalkboard"
 category:
-  - 火龙果
-tag:
-  - 红
+  - 学习路线
+author:
+  name: Swordfish
+  url: https://jandswordfish.github.io/blog/
+  email: 2771030100@qq.com
 ---
 # 学习路线
 

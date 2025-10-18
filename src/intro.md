@@ -1,6 +1,11 @@
 ---
+
 icon: circle-info
 cover: /assets/images/bg2.jpg
+author:
+  name: Swordfish
+  url: https://jandswordfish.github.io/blog/
+  email: 2771030100@qq.com
 ---
 # 个人介绍
 ## 个人能力

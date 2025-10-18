@@ -1,16 +1,38 @@
 ---
+# 这是文章的标题
 title: Markdown 使用方法
+# 你可以自定义封面图片
+cover: /assets/images/bg1.jpg
+# 这是页面的图标
 icon: fa6-brands:markdown
+# 这是侧边栏的顺序
 order: 2
+# 设置作者
+author:
+  name: Swordfish
+  url: https://jandswordfish.github.io/blog/
+  email: 2771030100@qq.com
+# 设置写作时间
+date: 2025-10-19
+# 一个页面可以有多个分类
 category:
   - 前端
+# 一个页面可以有多个标签
 tag:
   - Markdown
+  - 使用指南
+# 此页面会在文章列表置顶
+sticky: true
+# 此页面会出现在星标文章中
+star: true
+# 你可以自定义页脚
+footer: 这是测试显示的页脚
+# 你可以自定义版权信息
+copyright: 无版权
 ---
-VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。
 
-你需要创建并编写 Markdown，以便 VuePress 可以根据文件结构将它们转换为不同的页面。
-
+`more` 注释之前的内容被视为文章摘要。
+vuepress详见:"https://theme-hope.vuejs.press/zh/",
 <!-- more -->
 
 ## Markdown 介绍
@@ -260,5 +282,62 @@ npm i -D vuepress-theme-hope
 ```[]:
 a
 ```
+## 组件
+
+每个 Markdown 页面都会被转换为一个 Vue 组件，这意味着你可以在 Markdown 中使用 Vue 语法：
+
+{{ 1 + 1 }}
+
+<!-- markdownlint-disable MD033 -->
+
+<ul>
+  <li v-for="i in 3">{{ i }}</li>
+</ul>
+
+<!-- markdownlint-enable MD033 -->
+
+你也可以创建并引入你自己的组件。
+
+<MyComponent />
+
+<script setup>
+import { defineComponent, h, ref } from 'vue';
+
+const MyComponent = defineComponent({
+  setup() {
+    const input = ref('Hello world!');
+    const onInput = (e) => {
+      input.value = e.target.value;
+    };
+
+    return () => [
+      h('p', [
+        h('span','输入: '),
+        h('input', {
+          value: input.value,
+          onInput,
+        }),
+      ]),
+      h('p', [h('span','输出: '), input.value]),
+    ];
+  },
+});
+</script>
+
+---
+
+主题包含一些有用的组件。这里是一些例子:
+
+- 文字结尾应该有深蓝色的 徽章文字 徽章。 <Badge text="徽章文字" color="#242378" />
+
+- 一个卡片:
+
+  ```component VPCard
+  title: Mr.Hope
+  desc: Where there is light, there is hope
+  logo: https://mister-hope.com/logo.svg
+  link: https://mister-hope.com
+  background: rgba(253, 230, 138, 0.15)
+  ```
 
 [^first]: 这是脚注内容

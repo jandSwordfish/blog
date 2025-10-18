@@ -1,14 +1,19 @@
 ---
-title: 笔记
+title: 算法笔记
 icon: book
 order: 5
+author:
+  name: Swordfish
+  url: https://jandswordfish.github.io/blog/
+  email: 2771030100@qq.com
 category:
   - 算法
 tag:
   - 算法笔记
 ---
 # 质数
-
+存在我自己写的情况，可能不准确
+<!-- more -->
 ## 6倍速普通方法
 
 ```
