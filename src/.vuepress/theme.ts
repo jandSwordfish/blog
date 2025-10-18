@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://mister-hope.com",
   },
 
-  logo: ".vuepress/public/cp.png",
+  logo: "/assets/images/cp.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -68,8 +68,8 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
-
+      footer: "记录我所记录的",
+      
       displayFooter: true,
 
       blog: {
@@ -83,15 +83,15 @@ export default hopeTheme({
       },
     },
   },
-
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-    },
-  },
+  //if you want lock post
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": {
+  //       hint: "Password: 1234",
+  //       password: "1234",
+  //     },
+  //   },
+  // },
 
   // enable it to preview all changes in time
   // hotReload: true,

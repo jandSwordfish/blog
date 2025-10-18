@@ -1,5 +1,5 @@
 ---
-title: 主要功能
+title: 网站收藏
 index: false
 icon: laptop-code
 category:

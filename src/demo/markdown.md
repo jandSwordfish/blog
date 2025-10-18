@@ -7,7 +7,6 @@ category:
 tag:
   - Markdown
 ---
-
 VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。
 
 你需要创建并编写 Markdown，以便 VuePress 可以根据文件结构将它们转换为不同的页面。
@@ -66,8 +65,6 @@ Orange
 
 此文字有脚注[^first].
 
-[^first]: 这是脚注内容
-
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/footnote.html)
 
 #### 导入文件
@@ -87,7 +84,7 @@ $$
 
 #### 任务列表
 
-- [x] 计划 1
+- [X] 计划 1
 - [ ] 计划 2
 
 [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/tasklist.html)
@@ -106,7 +103,7 @@ $$
 
 #### 组件
 
-```component VPCard
+```component
 title: Mr.Hope
 desc: Where there is light, there is hope
 logo: https://mister-hope.com/logo.svg
@@ -260,34 +257,8 @@ npm i -D vuepress-theme-hope
 
 <iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/code-demo.html" width="100%" height="450"/>
 
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/demo.html)
+```[]:
+a
+```
 
-#### 交互演示
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/playground.html" width="100%" height="480"/>
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/playground.html)
-
-#### Kotlin 交互演示
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/kotlin-playground.html" width="100%" height="220"/>
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/kotlin-playground.html)
-
-#### Sandpack 交互演示
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/sandpack.html" width="100%" height="380"/>
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/sandpack.html)
-
-#### Vue 交互演示
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/vue-playground.html" width="100%" height="380"/>
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/vue-playground.html)
-
-#### 幻灯片
-
-<iframe src="https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html" width="100%" height="420"/>
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/revealjs.html)
+[^first]: 这是脚注内容

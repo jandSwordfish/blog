@@ -7,22 +7,21 @@ category:
 tag:
   - 禁用
 
-navbar: false
-sidebar: false
+navbar: true
+
 
 breadcrumb: false
-pageInfo: false
-contributors: false
+
+contributors: true
 editLink: false
-lastUpdated: false
-prev: false
-next: false
+lastUpdated: true
+prev: true
+next: true
 comment: false
-footer: false
+footer: true
 
-backtotop: false
+backtotop: true
 ---
-
 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。
 
 <!-- more -->
