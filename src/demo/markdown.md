@@ -1,9 +1,9 @@
 ---
-title: Markdown 展示
+title: Markdown 使用方法
 icon: fa6-brands:markdown
 order: 2
 category:
-  - 使用指南
+  - 前端
 tag:
   - Markdown
 ---

@@ -1,6 +1,6 @@
 ---
 icon: circle-info
-cover: /assets/images/bg1.jpg
+cover: /assets/images/bg2.jpg
 ---
 # 个人介绍
 ## 个人能力

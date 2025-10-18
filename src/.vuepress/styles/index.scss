@@ -5,3 +5,28 @@
 .vp-blog-hero-description{
     color:rgb(58, 210, 83)
 }
+.pointer {
+  position: fixed;
+  border-radius: 50%;
+  background-color: rgba(22, 66, 75, 0.4);
+  opacity: 0;
+  z-index: 999;
+  animation: grow 0.4s forwards;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

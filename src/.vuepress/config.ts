@@ -1,13 +1,13 @@
 import { defineUserConfig } from "vuepress";
-
 import theme from "./theme.js";
+
 import { getDirname, path } from "vuepress/utils";
 import { hopeTheme } from "vuepress-theme-hope";
+import { formatDateString } from "vuepress/shared";
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: "/blog",
-
   locales: {
     "/": {
       lang: "zh-CN",
@@ -15,9 +15,10 @@ export default defineUserConfig({
       description: "vuepress-theme-hope 的博客演示",
     },
   },
-
   theme,
-  
+}
   // Enable it with pwa
   // shouldPrefetch: false,
-});
+);
+
+
