@@ -8,10 +8,10 @@
 .pointer {
   position: fixed;
   border-radius: 50%;
-  background-color: rgba(22, 66, 75, 0.4);
+  background-color: var(--pointer-color, rgba(22, 66, 75, 0.4));
   opacity: 0;
   z-index: 999;
-  animation: grow 0.4s forwards;
+  animation: grow var(--pointer-duration, 0.4s) forwards;
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
@@ -24,8 +24,8 @@
     transform: translate(-50%, -50%) scale(0);
   }
   to {
-    width: 100px;
-    height: 100px;
+    width: var(--max-size, 100px);
+    height: var(--max-size, 100px);
     opacity: 0;
     transform: translate(-50%, -50%) scale(1);
   }
