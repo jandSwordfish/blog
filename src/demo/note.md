@@ -3,9 +3,9 @@ title: 笔记
 icon: book
 order: 5
 category:
-  - 使用指南
+  - 算法
 tag:
-  - Markdown
+  - 算法笔记
 ---
 # 质数
 
