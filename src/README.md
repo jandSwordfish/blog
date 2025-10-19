@@ -6,8 +6,8 @@ title: swordfish的博客
 bgImage: /assets/images/bg3.jpg
 bgImageDark: /assets/images/dark.png
 heroImage: /assets/images/cp.png
-heroText: /\
-tagline: ↑
+heroText: ""
+tagline: 
 heroFullScreen: true
 projects:
   - icon: folder-open
