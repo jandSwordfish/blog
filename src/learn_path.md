@@ -1,5 +1,6 @@
 ---
 icon: "person-chalkboard"
+date: 2025-10-19
 category:
   - 学习路线
 author:
@@ -7,6 +8,8 @@ author:
   url: https://jandswordfish.github.io/blog/
   email: 2771030100@qq.com
 ---
+仅供参考
+<!-- more -->
 # 学习路线
 
 ## 学习路线

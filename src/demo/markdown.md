@@ -22,9 +22,10 @@ tag:
   - Markdown
   - 使用指南
 # 此页面会在文章列表置顶
-sticky: true
+sticky: false
 # 此页面会出现在星标文章中
-star: true
+star: false
+article: false
 # 你可以自定义页脚
 footer: 这是测试显示的页脚
 # 你可以自定义版权信息

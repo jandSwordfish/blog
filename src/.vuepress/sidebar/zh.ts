@@ -51,6 +51,11 @@ export const zhSidebar = sidebar({
           icon: "link",
           link: "WEB",
         },
+        {
+        text: "神秘代码",
+        icon: "code",
+        link: "code",
+      },
       ]
   },
   ],

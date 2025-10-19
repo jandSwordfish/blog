@@ -1,13 +1,18 @@
 ---
-
 icon: circle-info
+date: 2025-10-19
 cover: /assets/images/bg2.jpg
+sticky: 100
 author:
   name: Swordfish
   url: https://jandswordfish.github.io/blog/
   email: 2771030100@qq.com
 ---
+
+<!-- more -->
+
 # 个人介绍
+
 ## 个人能力
 待填
 ## 个人奖项

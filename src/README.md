@@ -11,8 +11,8 @@ tagline: ↑
 heroFullScreen: true
 projects:
   - icon: folder-open
-    name: 项目名称
-    desc: 项目详细描述
+    name: 进行中的项目
+    desc: 日志.log
     link: https://你的项目链接
 
   - icon: link
@@ -21,19 +21,14 @@ projects:
     link: else/WEB
 
   - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
+    name: 算法笔记
+    desc: 我的算法笔记
+    link: else/note
 
   - icon: newspaper
-    name: 文章名称
-    desc: 文章详细描述
+    name: 学科笔记
+    desc: 学完就删(雾)
     link: https://你的文章链接
-
-  - icon: user-group
-    name: 伙伴名称
-    desc: 伙伴详细介绍
-    link: https://你的伙伴链接
 
 
 footer: 记录我所记录的

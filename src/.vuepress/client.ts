@@ -26,10 +26,10 @@ export default defineClientConfig({
       destroyMouseClick();
     });
     setupSnowFall({    
-    image: "https://foo.github.io/bar/images/sakula.png ",
-    count: 50,
+    image: './assets/images/sakula.png',
+    count: 30,
     minSize: 1,
-    maxSize: 10,
+    maxSize: 9,
     speed: 1});
   },
   },

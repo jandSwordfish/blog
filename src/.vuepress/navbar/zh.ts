@@ -22,6 +22,11 @@ export const zhNavbar = navbar([
         icon: "link",
         link: "WEB",
       },
+      {
+        text: "神秘代码",
+        icon: "code",
+        link: "code",
+      },
     ]
   },
   // {

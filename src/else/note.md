@@ -1,5 +1,6 @@
 ---
 title: 算法笔记
+date: 2025-10-19
 icon: book
 order: 1
 author:
