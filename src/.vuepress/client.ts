@@ -25,10 +25,13 @@ export default defineClientConfig({
     onUnmounted(() => {
       destroyMouseClick();
     });
+    setupSnowFall({    
+    image: "https://foo.github.io/bar/images/sakula.png ",
+    count: 50,
+    minSize: 1,
+    maxSize: 10,
+    speed: 1});
   },
-    // setupSnowFall({    count: 50,
-    // minSize: 1,
-    // maxSize: 10,
-    // speed: 1});
   },
+
 );

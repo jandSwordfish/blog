@@ -11,7 +11,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "博客演示",
+      title: "swordfish's blog",
       description: "vuepress-theme-hope 的博客演示",
     },
   },

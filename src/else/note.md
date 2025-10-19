@@ -1,7 +1,7 @@
 ---
 title: 算法笔记
 icon: book
-order: 5
+order: 1
 author:
   name: Swordfish
   url: https://jandswordfish.github.io/blog/

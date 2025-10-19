@@ -46,6 +46,11 @@ export const zhSidebar = sidebar({
           icon: "book",
           link: "note",
         },
+        {
+          text: "网站收藏",
+          icon: "link",
+          link: "WEB",
+        },
       ]
   },
   ],

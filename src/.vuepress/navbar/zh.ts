@@ -17,6 +17,11 @@ export const zhNavbar = navbar([
         icon: "book",
         link: "/else/note",
       },
+      {
+        text: "网站收藏",
+        icon: "link",
+        link: "WEB",
+      },
     ]
   },
   // {
