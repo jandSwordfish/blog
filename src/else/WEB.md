@@ -2,13 +2,15 @@
 title: 网站收藏
 date: 2025-10-19
 icon: link
+cover: /assets/images/WEB.png
+sticky: 99
 order: 2
 author:
   name: Swordfish
   url: https://jandswordfish.github.io/blog/
   email: 2771030100@qq.com
 category:
-  - 网站收藏
+  - 其他
 tag:
   - 网站
 ---

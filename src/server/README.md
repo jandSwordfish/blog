@@ -1,6 +1,7 @@
 ---
 title: 服务器
 index: false
+article: false
 icon: globe
 author:
   name: Swordfish

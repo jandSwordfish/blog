@@ -28,7 +28,7 @@ projects:
   - icon: newspaper
     name: 学科笔记
     desc: 学完就删(雾)
-    link: https://你的文章链接
+    link: else/learn
 
 
 footer: 记录我所记录的

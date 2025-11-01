@@ -8,9 +8,9 @@ author:
   url: https://jandswordfish.github.io/blog/
   email: 2771030100@qq.com
 category:
-  - 算法
+  - 其他
 tag:
-  - 算法笔记
+  - 算法
 ---
 # 质数
 存在我自己写的情况，可能不准确

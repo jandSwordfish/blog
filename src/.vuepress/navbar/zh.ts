@@ -27,6 +27,11 @@ export const zhNavbar = navbar([
         icon: "code",
         link: "code",
       },
+      {
+        text: "学科笔记",
+        icon: "newspaper",
+        link: "learn",
+      },
     ]
   },
   // {

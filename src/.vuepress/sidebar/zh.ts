@@ -31,7 +31,13 @@ export const zhSidebar = sidebar({
       prefix: "server/",
       link: "server/",
       collapsible: true,
-      children: "structure",
+      children: [
+      {
+        "text": "Docker部署Springboot实战",
+        "icon": "truck-fast",
+        "link": "docker_spring",
+      },
+    ]
     },
     "intro",
     "learn_path",
@@ -55,7 +61,12 @@ export const zhSidebar = sidebar({
         text: "神秘代码",
         icon: "code",
         link: "code",
-      },
+        },
+        {
+        text: "学科笔记",
+        icon: "newspaper",
+        link: "learn",
+        },
       ]
   },
   ],
