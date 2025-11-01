@@ -25,6 +25,7 @@ tag:
 sticky: false
 # 此页面会出现在星标文章中
 star: false
+# 是否显示在主页
 article: false
 # 你可以自定义页脚
 footer: 这是测试显示的页脚
@@ -34,6 +35,7 @@ copyright: 无版权
 
 `more` 注释之前的内容被视为文章摘要。
 vuepress详见:"https://theme-hope.vuejs.press/zh/",
+icon相关:"https://fontawesome.com/search?f=classic&s=thin&o=r"
 <!-- more -->
 
 ## Markdown 介绍

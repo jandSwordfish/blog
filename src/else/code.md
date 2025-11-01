@@ -8,7 +8,7 @@ author:
   url: https://jandswordfish.github.io/blog/
   email: 2771030100@qq.com
 category:
-  - 神秘代码
+  - 其他
 tag:
   - 代码
 ---

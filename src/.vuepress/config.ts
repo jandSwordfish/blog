@@ -16,6 +16,12 @@ export default defineUserConfig({
     },
   },
   theme,
+  head: [
+    [
+    'link',
+      { rel: 'icon', href: './assets/icon/logo.ico' } // 设置图标路径
+    ]
+  ],
 }
   // Enable it with pwa
   // shouldPrefetch: false,
