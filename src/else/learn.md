@@ -274,5 +274,177 @@ int main() {
     
     return 0;
 }
+
+%{
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* Token类型定义 */
+#define KEYWORD 1
+#define IDENTIFIER 2
+#define CONSTANT 3
+#define OPERATOR 4
+#define DELIMITER 5
+
+/* 全局变量 */
+int bracket_stack[1000];
+int stack_top = -1;
+int error_flag = 0;
+
+/* 函数声明 */
+void push_bracket(char c);
+int pop_bracket(char c);
+void print_token(int type, char* value);
+void check_brackets();
+%}
+
+/* 定义模式 */
+DIGIT       [0-9]
+LETTER      [a-zA-Z]
+IDENTIFIER  ({LETTER}|_)({LETTER}|{DIGIT}|_)*
+INTEGER     {DIGIT}+
+REAL        {DIGIT}+\.{DIGIT}+
+SCIENTIFIC  ({INTEGER}|{REAL})[eE][+-]?{DIGIT}+
+WHITESPACE  [ \t\n\r]+
+
+/* 状态定义 */
+%x COMMENT_SINGLE
+%x COMMENT_MULTI
+
+%%
+
+/* 处理单行注释 */
+"//"                { BEGIN(COMMENT_SINGLE); }
+<COMMENT_SINGLE>\n  { BEGIN(INITIAL); }
+<COMMENT_SINGLE>.   { /* 忽略注释内容 */ }
+
+/* 处理多行注释 */
+"/*"                { BEGIN(COMMENT_MULTI); }
+<COMMENT_MULTI>"*/" { BEGIN(INITIAL); }
+<COMMENT_MULTI>\n   { /* 忽略换行 */ }
+<COMMENT_MULTI>.    { /* 忽略注释内容 */ }
+
+/* 关键字识别 */
+"if"        { print_token(KEYWORD, yytext); }
+"int"       { print_token(KEYWORD, yytext); }
+"for"       { print_token(KEYWORD, yytext); }
+"while"     { print_token(KEYWORD, yytext); }
+"do"        { print_token(KEYWORD, yytext); }
+"return"    { print_token(KEYWORD, yytext); }
+"break"     { print_token(KEYWORD, yytext); }
+"continue"  { print_token(KEYWORD, yytext); }
+"main"      { print_token(KEYWORD, yytext); }
+
+/* 标识符识别 */
+{IDENTIFIER} { print_token(IDENTIFIER, yytext); }
+
+/* 常量识别 */
+{SCIENTIFIC} { print_token(CONSTANT, yytext); }
+{REAL}       { print_token(CONSTANT, yytext); }
+{INTEGER}    { print_token(CONSTANT, yytext); }
+
+/* 双字符运算符 */
+">="        { print_token(OPERATOR, yytext); }
+"<="        { print_token(OPERATOR, yytext); }
+"!="        { print_token(OPERATOR, yytext); }
+
+/* 单字符运算符 */
+"+"         { print_token(OPERATOR, yytext); }
+"-"         { print_token(OPERATOR, yytext); }
+"*"         { print_token(OPERATOR, yytext); }
+"/"         { print_token(OPERATOR, yytext); }
+"="         { print_token(OPERATOR, yytext); }
+">"         { print_token(OPERATOR, yytext); }
+"<"         { print_token(OPERATOR, yytext); }
+
+/* 分隔符 */
+","         { print_token(DELIMITER, yytext); }
+";"         { print_token(DELIMITER, yytext); }
+"{"         { push_bracket('{'); print_token(DELIMITER, yytext); }
+"}"         { if(!pop_bracket('}')) error_flag = 1; print_token(DELIMITER, yytext); }
+"("         { push_bracket('('); print_token(DELIMITER, yytext); }
+")"         { if(!pop_bracket(')')) error_flag = 1; print_token(DELIMITER, yytext); }
+
+/* 忽略空白字符 */
+{WHITESPACE} { /* 忽略空白字符 */ }
+
+/* 处理未识别字符 */
+.           { printf("警告: 未识别字符 '%s'\n", yytext); }
+
+%%
+
+/* C代码段 */
+
+/* 输出Token的函数 */
+void print_token(int type, char* value) {
+    printf("（%d，\"%s\"）\n", type, value);
+}
+
+/* 压栈函数 */
+void push_bracket(char c) {
+    if (stack_top < 999) {
+        bracket_stack[++stack_top] = c;
+    }
+}
+
+/* 出栈函数 */
+int pop_bracket(char c) {
+    if (stack_top < 0) {
+        printf("错误: '%c' 不匹配\n", c);
+        return 0;
+    }
+    
+    char expected = (c == ')') ? '(' : '{';
+    if (bracket_stack[stack_top] != expected) {
+        printf("错误: '%c' 不匹配\n", c);
+        return 0;
+    }
+    
+    stack_top--;
+    return 1;
+}
+
+/* 检查剩余未匹配的括号 */
+void check_brackets() {
+    if (stack_top >= 0) {
+        printf("错误: 存在未匹配的左括号\n");
+        error_flag = 1;
+    }
+}
+
+/* 主函数 */
+int main(int argc, char* argv[]) {
+    FILE* input_file = stdin;
+    
+    /* 如果提供了文件名参数 */
+    if (argc > 1) {
+        input_file = fopen(argv[1], "r");
+        if (!input_file) {
+            fprintf(stderr, "错误: 无法打开文件 %s\n", argv[1]);
+            return 1;
+        }
+        yyin = input_file;
+    }
+    
+    /* 执行词法分析 */
+    yylex();
+    
+    /* 检查括号匹配 */
+    check_brackets();
+    
+    /* 关闭文件 */
+    if (input_file != stdin) {
+        fclose(input_file);
+    }
+    
+    /* 返回错误状态 */
+    return error_flag;
+}
+
+/* yywrap函数 */
+int yywrap() {
+    return 1;
+}
 ```
 
