@@ -16,6 +16,23 @@ tag:
 ---
 
 <!-- more -->
+## 邮箱类
+
+### QQ邮箱
+
+https://mail.qq.com
+
+### 2925邮箱(无限邮)
+
+https://www.2925.com/login/
+
+### outlook邮箱(Microsoft)
+
+https://www.2925.com/login/
+
+### Gmail邮箱(google)
+https://mail.google.com/
+
 ## 工具类
 
 ### WEB构成分析
@@ -57,16 +74,6 @@ https://chatgpt.com/
 ### 扣子空间
 
 https://space.coze.cn/?from=landingpage&category=10000
-
-## 邮箱类
-
-### QQ邮箱
-
-https://mail.qq.com
-
-### 2925邮箱(无限邮)
-
-https://www.2925.com/login/
 
 ## 妙妙工具类
 
