@@ -37,6 +37,11 @@ export const zhSidebar = sidebar({
         "icon": "truck-fast",
         "link": "docker_spring",
       },
+      {
+        "text": "Docker部署前端项目",
+        "icon": "anchor",
+        "link": "docker_pre",
+      },
     ]
     },
     "intro",
