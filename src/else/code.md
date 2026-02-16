@@ -2,6 +2,7 @@
 title: 神秘代码
 date: 2025-10-19
 icon: code
+article: false
 order: 3
 author:
   name: Swordfish

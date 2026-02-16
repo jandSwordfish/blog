@@ -2,6 +2,7 @@
 title: 算法笔记
 date: 2025-10-19
 icon: book
+article: false
 order: 1
 author:
   name: Swordfish

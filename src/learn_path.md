@@ -1,6 +1,7 @@
 ---
 icon: "person-chalkboard"
 date: 2025-10-19
+article: false
 category:
   - 学习路线
 author:

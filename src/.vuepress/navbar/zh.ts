@@ -5,8 +5,8 @@ export const zhNavbar = navbar([
   "/demo/",
   "/backend/",
   "/server/",
+  "/hardware/",
   "/intro",
-  "/learn_path",
   {
     text: "其他",
     icon: "bars",

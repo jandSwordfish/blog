@@ -2,6 +2,7 @@
 title: 学科笔记
 date: 2025-11-02
 icon: newspaper
+article: false
 order: 4
 author:
   name: Swordfish

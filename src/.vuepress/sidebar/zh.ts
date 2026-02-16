@@ -44,35 +44,49 @@ export const zhSidebar = sidebar({
       },
     ]
     },
+    {
+        text: "硬件",
+        icon: "screwdriver-wrench",
+        prefix: "hardware/",
+        link: "hardware/",
+        collapsible: true,
+        children: [
+        {
+          "text": "投币器统计",
+          "icon": "microchip",
+          "link": "coin",
+        },
+      ]
+    },
     "intro",
     "learn_path",
       {
-      text: "其他",
-      icon: "bars",
-      collapsible: true,
-      prefix: "else/",
-      children: [
-        {
-          text: "算法笔记",
-          icon: "book",
-          link: "note",
-        },
-        {
-          text: "网站收藏",
-          icon: "link",
-          link: "WEB",
-        },
-        {
-        text: "神秘代码",
-        icon: "code",
-        link: "code",
-        },
-        {
-        text: "学科笔记",
-        icon: "newspaper",
-        link: "learn",
-        },
-      ]
-  },
+        text: "其他",
+        icon: "bars",
+        collapsible: true,
+        prefix: "else/",
+        children: [
+          {
+            text: "算法笔记",
+            icon: "book",
+            link: "note",
+          },
+          {
+            text: "网站收藏",
+            icon: "link",
+            link: "WEB",
+          },
+          {
+          text: "神秘代码",
+          icon: "code",
+          link: "code",
+          },
+          {
+          text: "学科笔记",
+          icon: "newspaper",
+          link: "learn",
+          },
+        ]
+      },
   ],
 });

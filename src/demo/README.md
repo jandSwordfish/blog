@@ -1,6 +1,7 @@
 ---
 title: 前端
 index: false
+article: false
 icon: hashtag
 author:
   name: Swordfish
