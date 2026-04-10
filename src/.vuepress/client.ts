@@ -9,9 +9,6 @@ import { initMouseClick, destroyMouseClick } from "./components/mouseClick.js";
 export default defineClientConfig({
   setup: () => {
     setupTransparentNavbar({ type: "homepage" });
-    if (typeof window !== 'undefined') {
-      setupTransparentNavbar({ type: "homepage" });
-    }
     
     onMounted(() => {
       // 可以传入自定义配置
